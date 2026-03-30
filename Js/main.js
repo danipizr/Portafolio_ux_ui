@@ -1,3 +1,6 @@
+
+
+
 const elements = document.querySelectorAll(".fade-in");
 
 const observer = new IntersectionObserver((entries) => {
@@ -11,7 +14,7 @@ const observer = new IntersectionObserver((entries) => {
 elements.forEach(el => observer.observe(el));
 
 
-// menu hamburguesa
+// MENÚ HAMBURGUESA
 const toggle = document.getElementById("menu-toggle");
 const nav = document.getElementById("nav-links");
 
@@ -20,7 +23,7 @@ toggle.addEventListener("click", () => {
 });
 
 
-// cierre menu
+// CIERRE AUTOMÁTICO DEL MENÚ
 document.querySelectorAll(".nav-links a").forEach(link => {
   link.addEventListener("click", () => {
     nav.classList.remove("active");
